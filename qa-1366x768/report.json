@@ -1,0 +1,146 @@
+[
+  {
+    "id": "cover",
+    "title": "实习转正答辩",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "profile",
+    "title": "交互设计 × 软件工程 × AI 产品",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "business-map",
+    "title": "从人找应用，到任务找能力",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "work-scope",
+    "title": "围绕消费侧，推进两个重点专项",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "card-boundary",
+    "title": "先确定不同服务如何承接",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "industry-templates",
+    "title": "先用真实行业验证卡片结构",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "common-templates",
+    "title": "第二次抽象：从行业卡片到通用资产",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "ai-coding",
+    "title": "模板解决复用，AI Coding 解决定制与迁移",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "plaza-data",
+    "title": "供给增加，但任务没有被有效启动",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "plaza-options",
+    "title": "从用户心智出发，发散三种广场方向",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "plaza-design",
+    "title": "把品牌能力翻译成可点击的任务",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "plaza-experiment",
+    "title": "用两个实验共同验证广场价值",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "container-support",
+    "title": "补齐服务调用、治理与规模放量条件",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "merchant-dashboard",
+    "title": "让品牌从完成上线，走向持续经营",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "team-proof",
+    "title": "把判断、抽象与推进连成产品闭环",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  },
+  {
+    "id": "growth",
+    "title": "在混沌中建立产品秩序",
+    "slideHeight": 768,
+    "contentHeight": null,
+    "scrollHeight": 768,
+    "overflowX": false,
+    "overflowY": false
+  }
+]

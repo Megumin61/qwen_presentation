@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="ZJU">
+  <rect width="96" height="96" rx="20" fill="#0B4DA2"/>
+  <text x="48" y="56" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="27" font-weight="800">ZJU</text>
+  <path d="M24 68h48" stroke="#9FC8FF" stroke-width="4" stroke-linecap="round"/>
+</svg>

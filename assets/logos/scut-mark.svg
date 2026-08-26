@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="SCUT">
+  <rect width="96" height="96" rx="20" fill="#075FAE"/>
+  <text x="48" y="56" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="21" font-weight="800">SCUT</text>
+  <path d="M22 68h52" stroke="#F2C75C" stroke-width="4" stroke-linecap="round"/>
+</svg>
