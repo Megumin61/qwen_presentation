@@ -60,9 +60,75 @@ const observer=new IntersectionObserver(entries=>{
 },{threshold:[.18,.34,.55,.75]});
 slides.forEach(slide=>observer.observe(slide));
 
+let mediaLightbox=null;
+
+function ensureLightbox(){
+  if(mediaLightbox)return mediaLightbox;
+  mediaLightbox=document.createElement('div');
+  mediaLightbox.className='media-lightbox';
+  mediaLightbox.setAttribute('role','dialog');
+  mediaLightbox.setAttribute('aria-modal','true');
+  mediaLightbox.innerHTML='<button type="button" class="media-lightbox-close" aria-label="关闭">×</button><figure><img alt="" /><figcaption></figcaption></figure>';
+  document.body.appendChild(mediaLightbox);
+  mediaLightbox.addEventListener('click',event=>{
+    if(event.target===mediaLightbox||event.target.closest('.media-lightbox-close'))closeLightbox();
+  });
+  return mediaLightbox;
+}
+
+function openLightbox(trigger){
+  const source=trigger.querySelector('img')||trigger;
+  const modal=ensureLightbox();
+  modal.querySelector('img').src=source.currentSrc||source.src;
+  modal.querySelector('img').alt=source.alt||'';
+  modal.querySelector('figcaption').textContent=trigger.dataset.caption||source.alt||'';
+  modal.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function closeLightbox(){
+  if(!mediaLightbox?.classList.contains('open'))return false;
+  mediaLightbox.classList.remove('open');
+  document.body.style.overflow='';
+  return true;
+}
+
+document.addEventListener('click',event=>{
+  const trigger=event.target.closest('[data-lightbox]');
+  if(trigger)openLightbox(trigger);
+});
+
+document.querySelectorAll('[data-carousel]').forEach(carousel=>{
+  const items=[...carousel.querySelectorAll('.pet-carousel-stage figure')];
+  const dots=[...carousel.querySelectorAll('[data-carousel-dot]')];
+  const counter=carousel.querySelector('[data-carousel-current]');
+  let index=0;
+  const render=next=>{
+    index=(next+items.length)%items.length;
+    items.forEach((item,i)=>{
+      const distance=(i-index+items.length)%items.length;
+      item.classList.toggle('is-active',distance===0);
+      item.classList.toggle('is-next',distance===1);
+      item.classList.toggle('is-prev',distance===items.length-1);
+    });
+    dots.forEach((dot,i)=>dot.classList.toggle('active',i===index));
+    if(counter)counter.textContent=String(index+1).padStart(2,'0');
+  };
+  carousel.querySelector('[data-carousel-prev]')?.addEventListener('click',()=>render(index-1));
+  carousel.querySelector('[data-carousel-next]')?.addEventListener('click',()=>render(index+1));
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>render(i)));
+  items.forEach((item,i)=>item.addEventListener('click',event=>{
+    if(i===index)return;
+    event.preventDefault();
+    event.stopPropagation();
+    render(i);
+  },true));
+  render(0);
+});
+
 document.addEventListener('keydown',event=>{
   if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;
-  if(event.key==='Escape')closeVersionPanel();
+  if(event.key==='Escape'&&closeLightbox())return;
   if(['ArrowDown','ArrowRight','PageDown',' '].includes(event.key)){event.preventDefault();goTo(activeIndex+1)}
   else if(['ArrowUp','ArrowLeft','PageUp'].includes(event.key)){event.preventDefault();goTo(activeIndex-1)}
   else if(event.key==='Home'){event.preventDefault();goTo(0)}
