@@ -126,6 +126,31 @@ document.querySelectorAll('[data-carousel]').forEach(carousel=>{
   render(0);
 });
 
+document.querySelectorAll('[data-strip-carousel]').forEach(carousel=>{
+  const viewport=carousel.querySelector('.v19-strip-viewport');
+  const track=carousel.querySelector('.v19-strip-track');
+  const items=[...track.querySelectorAll('figure')];
+  const counter=carousel.querySelector('[data-strip-current]');
+  let index=0;
+  const visibleCount=()=>window.innerWidth<=860?1:4;
+  const render=next=>{
+    const visible=visibleCount();
+    const max=Math.max(0,items.length-visible);
+    index=Math.max(0,Math.min(next,max));
+    const itemWidth=items[0]?.getBoundingClientRect().width||0;
+    const gap=parseFloat(getComputedStyle(track).columnGap||getComputedStyle(track).gap)||0;
+    track.style.transform=`translateX(-${index*(itemWidth+gap)}px)`;
+    items.forEach((item,i)=>item.classList.toggle('is-visible',i>=index&&i<index+visible));
+    if(counter)counter.textContent=`${String(index+1).padStart(2,'0')}–${String(Math.min(items.length,index+visible)).padStart(2,'0')}`;
+    carousel.querySelector('[data-strip-prev]')?.toggleAttribute('disabled',index===0);
+    carousel.querySelector('[data-strip-next]')?.toggleAttribute('disabled',index===max);
+  };
+  carousel.querySelector('[data-strip-prev]')?.addEventListener('click',()=>render(index-1));
+  carousel.querySelector('[data-strip-next]')?.addEventListener('click',()=>render(index+1));
+  window.addEventListener('resize',()=>render(index));
+  render(0);
+});
+
 document.addEventListener('keydown',event=>{
   if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;
   if(event.key==='Escape'&&closeLightbox())return;
