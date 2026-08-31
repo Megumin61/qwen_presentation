@@ -1,0 +1,151 @@
+/* V16 — 个人代理与能力订阅：17–22 页视觉与信息层级 */
+.v16-thought-slide .shell{display:flex;flex-direction:column;gap:18px}
+.v16-thought-slide .page-title{margin-bottom:0}
+.v16-thought-slide .page-title>p{font-size:13px}
+.v16-thought-slide .page-title h2{max-width:1320px;font-size:clamp(39px,3vw,52px);line-height:1.12}
+.v16-thought-slide .page-title>span{max-width:1240px;font-size:18px;line-height:1.48}
+.v16-thought-slide article,.v16-thought-slide aside{box-sizing:border-box}
+.v16-thought-slide small{font-size:11px;font-weight:900;letter-spacing:.04em}
+.v16-thought-slide h3{line-height:1.28}
+.v16-thought-slide p,.v16-thought-slide span{line-height:1.5}
+
+/* 17 / 原子化，但不把复杂度转嫁给用户 */
+.v16-atom-story{display:grid;grid-template-columns:minmax(0,3.25fr) minmax(285px,1fr);gap:22px}
+.v16-atom-evolution{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr;align-items:stretch;border-block:1px solid #cadbea;background:rgba(255,255,255,.86)}
+.v16-atom-evolution article{min-height:178px;padding:20px 21px;border-right:1px solid #d5e2ed}
+.v16-atom-evolution article.active{color:#fff;background:linear-gradient(145deg,#1068e7,#1654c6);box-shadow:inset 0 4px 0 var(--lime)}
+.v16-atom-evolution small{color:var(--blue)}
+.v16-atom-evolution .active small{color:var(--lime)}
+.v16-atom-evolution h3{margin:12px 0 8px;font-size:20px}
+.v16-atom-evolution p{color:#536983;font-size:14px}
+.v16-atom-evolution .active p{color:rgba(255,255,255,.82)}
+.v16-atom-evolution>i{align-self:center;color:var(--cyan);font-size:25px;font-style:normal;font-weight:900;text-align:center}
+.v16-nonconsensus{padding:19px 20px;border:1px solid #bed3e7;background:linear-gradient(150deg,#f7fbff,#eef6ff)}
+.v16-nonconsensus small{color:var(--blue)}
+.v16-nonconsensus h3{margin:10px 0 5px;font-size:17px}
+.v16-nonconsensus h3:nth-of-type(2){padding-top:12px;border-top:1px solid #d5e3ee}
+.v16-nonconsensus p{margin-bottom:12px;color:#58708a;font-size:13px}
+.v16-signal-row{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid #cbdce9;background:rgba(255,255,255,.9)}
+.v16-signal-row article{display:grid;grid-template-columns:130px 1fr;align-items:center;min-height:76px;padding:13px 18px;border-right:1px solid #d7e3ed}
+.v16-signal-row article:last-child{border-right:0}
+.v16-signal-row b{color:var(--blue);font-size:17px}
+.v16-signal-row span{color:#4e6781;font-size:13px}
+.v16-thesis{display:grid;grid-template-columns:150px 1fr;align-items:center;min-height:74px;padding:15px 20px;color:#fff;background:linear-gradient(100deg,#075de5,#1674db);box-shadow:inset 5px 0 0 var(--lime)}
+.v16-thesis b{color:var(--lime);font-size:18px}
+.v16-thesis span{font-size:16px}
+.v16-thesis strong{color:#fff;font-size:18px}
+
+/* 18 / 生产权与分发权 */
+#power-paradox .v15-market-main{grid-template-columns:1fr 1fr;gap:22px}
+#power-paradox .v15-market-main>article{min-height:215px;padding:19px 22px}
+#power-paradox .v15-market-main header h3{font-size:22px}
+#power-paradox .v15-market-main header p{font-size:14px}
+#power-paradox .v15-market-main .production ul{grid-template-columns:1fr}
+#power-paradox .v15-market-main .production li{padding:9px 0;font-size:14px}
+.v16-subscription-flow{display:grid;grid-template-columns:1fr 30px 1fr 30px 1fr 30px 1fr;align-items:stretch;margin-top:0;border-block:1px solid #cadbe9;background:rgba(255,255,255,.9)}
+.v16-subscription-flow span{display:flex;align-items:center;justify-content:center;min-height:68px;padding:11px 14px;color:#193b63;font-size:15px;font-weight:850;text-align:center}
+.v16-subscription-flow i{align-self:center;color:var(--cyan);font-size:23px;font-style:normal;font-weight:900;text-align:center}
+#power-paradox .v16-thesis{margin-top:0}
+
+/* 19 / 个人能力范围 */
+#ai-industry-view .page-title{margin-bottom:0}
+#ai-industry-view .productivity-progression{grid-template-columns:minmax(0,1fr) 58px minmax(0,1fr) 58px minmax(0,1fr);align-items:stretch}
+#ai-industry-view .productivity-progression article{min-height:205px;padding:21px 23px}
+#ai-industry-view .productivity-progression>i{align-self:center;justify-self:center;width:46px;height:16px}
+#ai-industry-view .productivity-progression h3{font-size:25px}
+#ai-industry-view .productivity-progression b{font-size:17px}
+#ai-industry-view .productivity-progression p{color:rgba(255,255,255,.86);font-size:13px}
+#ai-industry-view .personal-value-chain{margin-top:0;padding:14px 18px}
+#ai-industry-view .personal-value-chain span{font-size:13px}
+#ai-industry-view .benefit-tiers{grid-template-columns:1.45fr .92fr 1fr;margin-top:0}
+#ai-industry-view .benefit-tiers article{min-height:92px;padding:14px 18px}
+#ai-industry-view .benefit-tiers article.primary{border-left:5px solid var(--lime);background:rgba(255,255,255,.17)}
+#ai-industry-view .benefit-tiers small{font-size:11px}
+#ai-industry-view .benefit-tiers b{font-size:16px}
+#ai-industry-view .benefit-tiers article.primary b{font-size:22px}
+#ai-industry-view .benefit-tiers span{font-size:12px}
+#ai-industry-view .productivity-thesis{margin-top:0;padding:14px 19px}
+#ai-industry-view .productivity-thesis b{font-size:16px}
+#ai-industry-view .productivity-thesis span{font-size:13px}
+
+/* 20 / 千问：个人通用代理 */
+.v16-qwen-slide .page-title h2{font-size:clamp(39px,3vw,51px)}
+.v16-qwen-base{display:grid;grid-template-columns:190px 1fr;align-items:center;border-block:1px solid #c9dae9;background:rgba(255,255,255,.88)}
+.v16-qwen-base>small{padding:18px 20px;color:var(--blue);font-size:13px}
+.v16-qwen-base>div{display:grid;grid-template-columns:repeat(3,1fr)}
+.v16-qwen-base article{min-height:76px;padding:13px 18px;border-left:1px solid #d5e2ec}
+.v16-qwen-base b,.v16-qwen-base span{display:block}
+.v16-qwen-base b{font-size:17px}
+.v16-qwen-base span{margin-top:4px;color:#597089;font-size:13px}
+.v16-agent-path{display:grid;grid-template-columns:1fr 36px 1fr 36px 1fr 36px 1fr;align-items:stretch}
+.v16-agent-path article{min-height:150px;padding:18px 19px;border:1px solid #c8dbea;background:rgba(255,255,255,.9)}
+.v16-agent-path article.active{color:#fff;background:linear-gradient(145deg,#075de5,#1554bd);box-shadow:inset 0 4px 0 var(--lime)}
+.v16-agent-path small{color:var(--blue)}
+.v16-agent-path .active small{color:var(--lime)}
+.v16-agent-path h3{margin:10px 0 7px;font-size:20px}
+.v16-agent-path p{color:#586f87;font-size:13px}
+.v16-agent-path .active p{color:rgba(255,255,255,.8)}
+.v16-agent-path>i{align-self:center;color:var(--cyan);font-size:24px;font-style:normal;font-weight:900;text-align:center}
+.v16-qwen-mechanisms{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid #cbdce9;background:rgba(255,255,255,.9)}
+.v16-qwen-mechanisms article{min-height:74px;padding:13px 18px;border-right:1px solid #d7e3ed}
+.v16-qwen-mechanisms article:last-child{border-right:0}
+.v16-qwen-mechanisms b,.v16-qwen-mechanisms span{display:block}
+.v16-qwen-mechanisms b{color:var(--blue);font-size:16px}
+.v16-qwen-mechanisms span{margin-top:4px;color:#536c85;font-size:13px}
+.v16-principle{display:grid;grid-template-columns:1fr 70px 1fr;align-items:center;min-height:66px;padding:12px 18px;color:#fff;background:#075de5;box-shadow:inset 5px 0 0 var(--lime)}
+.v16-principle b{font-size:18px;text-align:center}
+.v16-principle i{color:var(--cyan);font-size:24px;font-style:normal;font-weight:900;text-align:center}
+
+/* 21 / 持续任务切入 */
+#qwen-recommendations .page-title h2{font-size:clamp(38px,2.9vw,49px)}
+#qwen-recommendations .page-title>span{font-size:17px}
+#qwen-recommendations .continuous-layout.v16-continuous{grid-template-columns:1.36fr .64fr;gap:22px}
+#qwen-recommendations .continuous-object{padding:18px 20px}
+#qwen-recommendations .continuous-object h3{font-size:27px}
+#qwen-recommendations .continuous-object p{font-size:14px}
+#qwen-recommendations .continuous-object>div span{font-size:12px}
+#qwen-recommendations .continuous-object>b{font-size:14px}
+#qwen-recommendations .continuous-object>em{font-size:12px}
+#qwen-recommendations .continuous-mvp h3{font-size:20px}
+#qwen-recommendations .continuous-mvp li{font-size:13px}
+#qwen-recommendations .task-selector h3{font-size:21px}
+#qwen-recommendations .task-selector b{font-size:15px}
+#qwen-recommendations .task-roadmap b{font-size:14px}
+#qwen-recommendations .task-roadmap span{font-size:11px}
+#qwen-recommendations .task-metrics span{font-size:13px}
+
+/* 22 / 我的选择 */
+#growth .page-title h2{font-size:clamp(38px,2.9vw,49px)}
+#growth .page-title>span{font-size:17px}
+#growth .future-focus article{min-height:138px;padding:18px 20px}
+#growth .future-focus small{font-size:11px}
+#growth .future-focus b{font-size:17px}
+#growth .future-focus article:first-child b{font-size:21px}
+#growth .future-focus span{font-size:13px;line-height:1.5}
+#growth .future-path article h3{font-size:18px}
+#growth .future-path article p{font-size:13px}
+#growth .future-closing-line b{font-size:18px}
+#growth .future-closing-line span{font-size:14px}
+
+@media(max-height:820px) and (min-width:861px){
+  .v16-thought-slide .shell{gap:12px}
+  .v16-thought-slide .page-title h2{font-size:34px}
+  .v16-thought-slide .page-title>span{font-size:14px}
+  .v16-atom-evolution article{min-height:142px;padding:14px 16px}
+  .v16-atom-evolution h3{font-size:17px}.v16-atom-evolution p{font-size:11px}
+  .v16-nonconsensus{padding:14px 16px}.v16-nonconsensus h3{font-size:14px}.v16-nonconsensus p{font-size:10px}
+  .v16-signal-row article{min-height:60px;padding:9px 13px}.v16-signal-row b{font-size:14px}.v16-signal-row span{font-size:10px}
+  .v16-thesis{min-height:58px;padding:10px 15px}.v16-thesis b{font-size:15px}.v16-thesis span,.v16-thesis strong{font-size:13px}
+  .v16-agent-path article{min-height:118px;padding:13px 14px}.v16-agent-path h3{font-size:16px}.v16-agent-path p{font-size:10px}
+  .v16-qwen-base article,.v16-qwen-mechanisms article{min-height:58px;padding:9px 13px}
+  .v16-principle{min-height:52px;padding:8px 13px}.v16-principle b{font-size:14px}
+}
+
+@media(max-width:860px){
+  .v16-atom-story,.v16-qwen-base{grid-template-columns:1fr}
+  .v16-atom-evolution,.v16-agent-path,.v16-subscription-flow{grid-template-columns:1fr}
+  .v16-atom-evolution>i,.v16-agent-path>i,.v16-subscription-flow>i{transform:rotate(90deg)}
+  .v16-signal-row,.v16-qwen-mechanisms{grid-template-columns:1fr}
+  .v16-thesis,.v16-principle{grid-template-columns:1fr}
+  .v16-qwen-base>div{grid-template-columns:1fr}
+}
